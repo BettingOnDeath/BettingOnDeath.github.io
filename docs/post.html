@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Post page specific layout */
+    .post-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      min-height: 100vh;
+    }
+
+    .post-left {
+      padding: var(--spacing-sm);
+      overflow-y: auto;
+    }
+
+    .post-right {
+      border-left: 1px solid var(--color-fg);
+      padding: var(--spacing-md);
+      overflow-y: auto;
+    }
+
+    .post-images-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+
+    .post-image-item {
+      width: 100%;
+    }
+
+    .post-image-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .post-image-caption {
+      font-family: 'Cascadia Code', 'Courier New', monospace;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 1024px) {
+      .post-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .post-right {
+        border-left: none;
+        border-top: 1px solid var(--color-fg);
+      }
+    }
+  </style>
+</head>
+<body data-page="post">
+  <div class="post-layout">
+    <!-- Left Column: Content -->
+    <div class="post-left">
+      <!-- Clinical Header -->
+      <header class="clinical-header">
+        <div>CZZ / ARCHIVE / POST</div>
+        <div style="margin-top: 0.5rem;">
+          <a href="index.html">HOME</a> /
+          <a href="archive.html">ARCHIVE</a>
+        </div>
+      </header>
+
+      <!-- Post Metadata -->
+      <section class="section">
+        <div class="post-meta" id="post-date">Loading...</div>
+        <h1 class="section-header" id="post-title">Loading...</h1>
+      </section>
+
+      <!-- Post Content -->
+      <section class="section">
+        <article id="post-content" class="post-content">
+          <!-- Content will be loaded dynamically -->
+        </article>
+      </section>
+
+      <!-- Navigation -->
+      <section class="section">
+        <a href="index.html" class="link-arrow">BACK_TO_HOME</a>
+      </section>
+    </div>
+
+    <!-- Right Column: Images -->
+    <div class="post-right">
+      <div id="post-images" class="post-images-container">
+        <!-- Images will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

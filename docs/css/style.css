@@ -1,0 +1,431 @@
+/* Swiss/Neo-Brutalist Design System */
+/* Strict monochromatic palette - Pure black and white only */
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --font-primary: 'Helvetica Neue', 'Arial', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  /* Type Scale */
+  --text-super-display: clamp(8rem, 15vw, 20rem);
+  --text-section-header: clamp(2rem, 4vw, 4rem);
+  --text-sub-header: 0.875rem;
+  --text-body: 0.875rem;
+  --text-meta: 0.75rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  line-height: 1.5;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+.super-display {
+  font-size: var(--text-super-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.section-header {
+  font-size: var(--text-section-header);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.sub-header {
+  font-size: var(--text-sub-header);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.meta {
+  font-size: var(--text-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section {
+  border-top: 1px solid var(--color-fg);
+  padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+.section:first-child {
+  border-top: none;
+}
+
+/* Header/Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-fg);
+}
+
+.brand-initial {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-size: var(--text-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-separator {
+  margin: 0 0.25rem;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--spacing-xl);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-2,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Links */
+a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link-arrow::before {
+  content: '→ ';
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+.data-list li {
+  margin-bottom: var(--spacing-md);
+}
+
+.data-list-title {
+  font-size: var(--text-sub-header);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.data-list-subtitle {
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Blog Post */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.post-item {
+  border-top: 1px solid var(--color-fg);
+  padding-top: var(--spacing-md);
+}
+
+.post-meta {
+  font-size: var(--text-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.post-title {
+  font-size: var(--text-section-header);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.post-content {
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+.post-content p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--spacing-md) 0;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-top: 1px solid var(--color-fg);
+  margin-top: var(--spacing-xl);
+}
+
+.footer-text {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Utility Classes */
+.text-left {
+  text-align: left;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+
+.py-sm { padding-top: var(--spacing-sm); padding-bottom: var(--spacing-sm); }
+.py-md { padding-top: var(--spacing-md); padding-bottom: var(--spacing-md); }
+.py-lg { padding-top: var(--spacing-lg); padding-bottom: var(--spacing-lg); }
+
+.px-sm { padding-left: var(--spacing-sm); padding-right: var(--spacing-sm); }
+.px-md { padding-left: var(--spacing-md); padding-right: var(--spacing-md); }
+
+/* Monospaced Font for Raw/Technical Content */
+.mono {
+  font-family: 'Cascadia Code', 'Courier New', 'Consolas', monospace;
+}
+
+/* Home Page Asymmetrical Layout */
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-left {
+  border-right: 1px solid var(--color-fg);
+  padding: var(--spacing-sm);
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.home-right {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Clinical Header */
+.clinical-header {
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-fg);
+}
+
+/* Raw Excerpt Styling */
+.post-excerpt-raw {
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: transparent;
+  padding: var(--spacing-xs) 0;
+  margin: var(--spacing-xs) 0;
+  color: var(--color-fg);
+}
+
+/* Post Item Redesign for Home */
+.home-left .post-item {
+  border-top: 1px solid var(--color-fg);
+  padding: var(--spacing-md) 0;
+  margin: 0;
+}
+
+.home-left .post-item:first-child {
+  border-top: none;
+}
+
+.home-left .post-meta {
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.home-left .post-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.home-left .post-title a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.home-left .post-title a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Image Container */
+.hero-image-container {
+  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.image-metadata {
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-left {
+    border-right: none;
+    border-bottom: 1px solid var(--color-fg);
+  }
+
+  .home-right {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+}
+
+/* Link Styling for Raw Aesthetic */
+.link-arrow {
+  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+}
+
+.link-arrow::before {
+  content: '→ ';
+}
