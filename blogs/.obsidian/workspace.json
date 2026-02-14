@@ -76,9 +76,37 @@
               "icon": "lucide-file",
               "title": "170806_essays"
             }
+          },
+          {
+            "id": "6706c3d07d33ea0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "211120.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "211120"
+            }
+          },
+          {
+            "id": "c9f93920bfa488c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "220520.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "220520"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -240,28 +268,32 @@
       "bases:新建数据库": false
     }
   },
-  "active": "e646c7fbfa459a61",
+  "active": "37a9345fb1251490",
   "lastOpenFiles": [
+    "assets/220520",
+    "assets/220520/IMG_20251231_101521.jpg",
+    "assets/220520/IMG_20251231_101537.jpg",
+    "assets/220520/IMG_20251231_101617.jpg",
+    "assets/220520/IMG_20251231_101631.jpg",
+    "assets/220520/IMG_20251231_101648.jpg",
+    "assets/220520/IMG_20251231_101703.jpg",
+    "assets/220520/IMG_20251231_101719.jpg",
+    "assets/220520/IMG_20251231_101746.jpg",
+    "assets/220520/IMG_20251231_101806.jpg",
+    "assets/220520/IMG_20251231_101436.jpg",
+    "assets/未命名",
+    "211120.md",
+    "220520.md",
+    "170806_essays.md",
     "260214.md",
     "260126.md",
     "260213.md",
     "220912.md",
-    "assets/220912/clipboard_2026-02-14_02-22.png",
     "assets/220912",
-    "170806_essays.md",
-    "assets/260214/img_20260214_005235_109.jpg",
-    "assets/260214/img_20260214_005124_010.jpg",
-    "assets/260214/img_20260214_005118_212.jpg",
-    "assets/260126/img_20260214_005225_933.jpg",
     "170806 初二作文作业.md",
-    "assets/260126/微信图片_2026-02-14_005225_933.jpg",
     "assets/260126",
-    "assets/260214/微信图片_2026-02-14_005235_109.jpg",
-    "assets/260214/微信图片_2026-02-14_005124_010.jpg",
-    "assets/260214/微信图片_2026-02-14_005118_212.jpg",
     "assets/260214",
     "assets",
-    "微信图片_2026-02-14_005235_109 1.jpg",
     "未命名"
   ]
 }
