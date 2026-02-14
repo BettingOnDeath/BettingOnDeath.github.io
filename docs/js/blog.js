@@ -148,10 +148,10 @@ function initImageCycling() {
 
   if (!heroImage) return;
 
-  // List of images in assets/hero
-  const images = [
-    { src: 'assets/hero/IMG_20260213_152045.png', meta: 'IMG_REF: LAKE_VIEW / SUBJECT_01<br>AR: 4:5 / RAW CAPTURE<br>FILE: IMG_20260213_152045.PNG' },
-  ];
+  // Load images from hero config
+  const images = HERO_CONFIG.heroImages;
+
+  if (!images || images.length === 0) return;
 
   let currentIndex = 0;
 

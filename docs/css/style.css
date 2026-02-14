@@ -1,11 +1,36 @@
 /* Swiss/Neo-Brutalist Design System */
 /* Strict monochromatic palette - Pure black and white only */
 
+/* IBM Plex Sans SC for Chinese Characters */
+@font-face {
+  font-family: 'IBM Plex Sans SC';
+  src: url('../assets/font/IBMPlexSansSC/IBMPlexSansSC-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans SC';
+  src: url('../assets/font/IBMPlexSansSC/IBMPlexSansSC-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans SC';
+  src: url('../assets/font/IBMPlexSansSC/IBMPlexSansSC-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
 :root {
   --color-bg: #FFFFFF;
   --color-fg: #000000;
-  --font-primary: 'Helvetica Neue', 'Arial', 'Inter', -apple-system, sans-serif;
-  --font-mono: 'Courier New', monospace;
+  --font-primary: 'IBM Plex Sans SC', 'Helvetica Neue', 'Arial', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Sans SC', 'Courier New', monospace;
 
   /* Type Scale */
   --text-super-display: clamp(8rem, 15vw, 20rem);

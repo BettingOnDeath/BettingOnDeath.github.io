@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "170806_essays.md",
+                "file": "170806.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "170806_essays"
+              "title": "170806"
             }
           },
           {
@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "220520.md",
+                "file": "170806.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "220520"
+              "title": "170806"
             }
           }
         ],
@@ -270,6 +270,10 @@
   },
   "active": "37a9345fb1251490",
   "lastOpenFiles": [
+    "assets/170806",
+    "assets/170806/2344e142468df2c2ce996686ca1b588c.jpg",
+    "assets/170806_essays",
+    "220520.md",
     "assets/220520",
     "assets/220520/IMG_20251231_101521.jpg",
     "assets/220520/IMG_20251231_101537.jpg",
@@ -280,11 +284,9 @@
     "assets/220520/IMG_20251231_101719.jpg",
     "assets/220520/IMG_20251231_101746.jpg",
     "assets/220520/IMG_20251231_101806.jpg",
-    "assets/220520/IMG_20251231_101436.jpg",
     "assets/未命名",
     "211120.md",
-    "220520.md",
-    "170806_essays.md",
+    "170806.md",
     "260214.md",
     "260126.md",
     "260213.md",

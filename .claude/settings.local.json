@@ -10,7 +10,8 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(gh repo view:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(dir \"C:\\\\Dev\\\\Blog\\\\docs\\\\assets\\\\font\\\\IBMPlexSansSC\" /b)"
     ]
   }
 }
