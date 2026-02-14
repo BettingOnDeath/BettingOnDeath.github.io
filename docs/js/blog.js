@@ -155,16 +155,25 @@ function initImageCycling() {
 
   let currentIndex = 0;
 
-  function cycleImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    heroImage.src = images[currentIndex].src;
-    if (imageMetadata) {
-      imageMetadata.innerHTML = images[currentIndex].meta;
-    }
+  // Set initial image
+  heroImage.src = images[currentIndex].src;
+  if (imageMetadata) {
+    imageMetadata.innerHTML = images[currentIndex].meta;
   }
 
-  // Cycle every 15 seconds
-  setInterval(cycleImage, 15000);
+  // Only cycle if there are multiple images
+  if (images.length > 1) {
+    function cycleImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      heroImage.src = images[currentIndex].src;
+      if (imageMetadata) {
+        imageMetadata.innerHTML = images[currentIndex].meta;
+      }
+    }
+
+    // Cycle every 15 seconds
+    setInterval(cycleImage, 15000);
+  }
 }
 
 // Initialize based on page
